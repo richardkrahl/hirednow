@@ -1,0 +1,46 @@
+{
+  "source": "Harvard Extension School Career Services",
+  "top_mistakes": [
+    "Spelling and grammar errors",
+    "Missing email and phone information",
+    "Using passive language instead of action words",
+    "Not well organized, concise, or easy to skim",
+    "Not tailored to the position or industry"
+  ],
+  "resume_rules": {
+    "do": [
+      "Tailor content to positions you seek",
+      "Be consistent in format and content",
+      "Make it easy to read with white space balance",
+      "Use consistent formatting (bold, italics, spacing)",
+      "List headings in order of importance",
+      "Reverse chronological order (most recent first)",
+      "Avoid gaps in experience timeline",
+      "Convey impact with quantifiable results"
+    ],
+    "dont": [
+      "Use personal pronouns (I, me, my)",
+      "Abbreviate",
+      "Use narrative style",
+      "Number or letter sections",
+      "Use slang or colloquialisms",
+      "Include picture",
+      "Include age or marital status",
+      "List references"
+    ]
+  },
+  "action_verbs": {
+    "leadership": ["Accomplished", "Achieved", "Administered", "Analyzed", "Chaired", "Consolidated", "Coordinated", "Delegated", "Developed", "Directed", "Earned", "Executed", "Handled", "Headed", "Impacted", "Improved", "Increased", "Led", "Mastered", "Orchestrated", "Organized", "Oversaw", "Planned", "Prioritized", "Produced", "Spearheaded", "Strengthened", "Supervised"],
+    "communication": ["Addressed", "Authored", "Collaborated", "Convinced", "Corresponded", "Developed", "Directed", "Documented", "Drafted", "Edited", "Formulated", "Influenced", "Lectured", "Negotiated", "Persuaded", "Presented", "Promoted", "Publicized", "Recruited", "Reported", "Synthesized", "Verbalized", "Wrote"],
+    "research": ["Analyzed", "Clarified", "Collected", "Conducted", "Critiqued", "Determined", "Discovered", "Evaluated", "Examined", "Identified", "Inspected", "Investigated", "Modeled", "Resolved", "Summarized", "Surveyed", "Tested"],
+    "technical": ["Assembled", "Built", "Calculated", "Designed", "Devised", "Engineered", "Fabricated", "Installed", "Maintained", "Operated", "Optimized", "Programmed", "Remodeled", "Repaired", "Solved", "Streamlined", "Upgraded"],
+    "quantitative": ["Administered", "Allocated", "Analyzed", "Audited", "Balanced", "Budgeted", "Calculated", "Computed", "Developed", "Forecasted", "Managed", "Marketed", "Maximized", "Minimized", "Planned", "Projected", "Researched"]
+  },
+  "formatting": {
+    "length": "1-2 pages maximum",
+    "font": "Professional (Arial, Calibri, Times New Roman)",
+    "size": "10-12 point",
+    "margins": "0.5-1 inch",
+    "file_format": "PDF preferred"
+  }
+}

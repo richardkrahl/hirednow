@@ -1,0 +1,30 @@
+{
+  "applications": [
+    {
+      "id": 1,
+      "title": "Product Manager",
+      "company": "Sonatype",
+      "location": "",
+      "url": "https://www.linkedin.com/jobs/view/product-manager-at-sonatype-4407966726",
+      "salary_range": "",
+      "description": "",
+      "source": "",
+      "status": "applied",
+      "date_discovered": "2026-05-19T12:19:24.007111",
+      "date_applied": "2026-05-19T12:19:28.218281",
+      "date_last_contact": "2026-05-19T12:19:28.218285",
+      "resume_used": "",
+      "cover_letter_used": "",
+      "match_score": 0,
+      "interest_level": 3,
+      "notes": "\n[2026-05-19] Applied via LinkedIn today",
+      "follow_up_date": null,
+      "recruiter_name": "",
+      "recruiter_email": "",
+      "recruiter_phone": ""
+    }
+  ],
+  "companies": {},
+  "contacts": [],
+  "notes": []
+}

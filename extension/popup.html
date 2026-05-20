@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 320px;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #eee;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 18px;
+      color: #333;
+    }
+    .header p {
+      margin: 4px 0 0;
+      font-size: 12px;
+      color: #666;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .stat-box {
+      background: #f5f5f5;
+      padding: 12px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .stat-value {
+      font-size: 24px;
+      font-weight: 600;
+      color: #667eea;
+    }
+    .stat-label {
+      font-size: 11px;
+      color: #666;
+      margin-top: 4px;
+    }
+    .button {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    .button:hover {
+      opacity: 0.9;
+    }
+    .button-secondary {
+      background: #6b7280;
+    }
+    .footer {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid #eee;
+      text-align: center;
+      font-size: 11px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 JARVIS Job Hunter</h1>
+    <p>Auto-fill job applications with AI</p>
+  </div>
+  
+  <div class="stats" id="stats">
+    <div class="stat-box">
+      <div class="stat-value" id="total-apps">-</div>
+      <div class="stat-label">Applied</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-value" id="interview-apps">-</div>
+      <div class="stat-label">Interviews</div>
+    </div>
+  </div>
+  
+  <button class="button" id="create-profile">⚙️ Create Profile</button>
+  <button class="button button-secondary" id="view-tracker">📊 View Tracker</button>
+  <button class="button button-secondary" id="export-data">💾 Export Data</button>
+  
+  <div class="footer">
+    Local • Private • Free Forever<br>
+    v1.0.0
+  </div>
+  
+  <script>
+    // Load stats on popup open
+    chrome.runtime.sendMessage({ action: 'getStats' }, (stats) => {
+      if (stats) {
+        document.getElementById('total-apps').textContent = stats.applied || 0;
+        document.getElementById('interview-apps').textContent = stats.interview || 0;
+      }
+    });
+    
+    // Button handlers
+    document.getElementById('create-profile').addEventListener('click', () => {
+      alert('Profile setup:\\n\\n1. Edit: ~/.openclaw/workspace/projects/job-hunter/data/profile.json\\n2. Reload extension after editing\\n3. JARVIS will auto-fill forms with your info');
+    });
+    
+    document.getElementById('view-tracker').addEventListener('click', () => {
+      alert('Open tracker:\\n\\npython3 ~/.openclaw/workspace/projects/job-hunter/tracker/application_tracker.py dashboard');
+    });
+    
+    document.getElementById('export-data').addEventListener('click', () => {
+      chrome.runtime.sendMessage({ action: 'getApplications' }, (apps) => {
+        const blob = new Blob([JSON.stringify(apps, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        chrome.downloads.download({
+          url: url,
+          filename: 'job_applications.json'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

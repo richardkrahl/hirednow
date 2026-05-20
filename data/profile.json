@@ -1,0 +1,89 @@
+{
+  "personal": {
+    "firstName": "Richard",
+    "lastName": "Krahl II",
+    "email": "thekrahl@gmail.com",
+    "phone": "(602) 790-1108",
+    "address": "",
+    "city": "Nashville",
+    "state": "TN",
+    "zip": "",
+    "linkedin": "https://www.linkedin.com/in/richardkrahl/",
+    "website": "",
+    "github": ""
+  },
+  "work_authorization": {
+    "authorized_us": true,
+    "require_sponsorship": false,
+    "clearance": null
+  },
+  "preferences": {
+    "desired_salary_min": 75000,
+    "willing_relocate": false,
+    "remote_only": false,
+    "work_type": "full-time"
+  },
+  "experience": [
+    {
+      "title": "Food and Beverage Manager",
+      "company": "Topgolf",
+      "start_date": "September 2022",
+      "end_date": "Present",
+      "description": "Oversaw all aspects of food and beverage operations, including menu planning, inventory management, and cost control. Managed team of 100+ staff members. Liaised with other departments for seamless operations."
+    },
+    {
+      "title": "Hospitality Manager",
+      "company": "Topgolf",
+      "start_date": "October 2017",
+      "end_date": "Present",
+      "description": "Supervise team in providing best-in-class service daily. Coach and develop team. Focus on business metrics to drive performance."
+    },
+    {
+      "title": "Store Manager",
+      "company": "Radio Shack",
+      "start_date": "September 2010",
+      "end_date": "June 2013",
+      "description": "Managed store operations, P&L, and team of 5-6 staff. Achieved Circle of Excellence ranking 110 out of 4300 stores. Annual gross revenue $800,000."
+    },
+    {
+      "title": "Sales Manager",
+      "company": "Cactus Sports",
+      "start_date": "September 2008",
+      "end_date": "February 2010",
+      "description": "Recruited, trained, and managed team of 8-10 staff. Consistently exceeded sales goals. Annual gross revenue $1-million."
+    },
+    {
+      "title": "Store Manager",
+      "company": "Soccer Express USA",
+      "start_date": "June 2005",
+      "end_date": "July 2008",
+      "description": "Managed store operations and team of 6-8 staff. Increased profitability and shared monthly reports with owners. Annual gross revenue $2-million."
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Arts in Interdisciplinary Studies",
+      "school": "Arizona State University",
+      "graduation_year": ""
+    }
+  ],
+  "skills": [
+    "Restaurant Management",
+    "Team Leadership",
+    "Customer Service",
+    "P&L Management",
+    "Inventory Management",
+    "Staff Training & Development",
+    "Operations Management",
+    "Problem Solving",
+    "Microsoft Office",
+    "Hospitality Management"
+  ],
+  "certifications": [
+    "TABC Certification"
+  ],
+  "currentCompany": "Topgolf",
+  "currentTitle": "Food and Beverage Manager",
+  "resume_path": "~/.openclaw/workspace/projects/job-hunter/data/resume_text.txt",
+  "cover_letter_template": ""
+}
