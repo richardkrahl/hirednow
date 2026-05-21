@@ -2,98 +2,161 @@
 
 > Apply to jobs automatically. **$79 once, not $600/year.**
 
-**The anti-subscription job application tool.**
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![Local AI](https://img.shields.io/badge/AI-Ollama-green.svg)](https://ollama.com)
+
+**HiredNow** is a local-first job application automation tool. Find jobs on LinkedIn & Indeed, optimize your resume with AI, and track applications — all on your own machine. No cloud. No subscriptions. No data mining.
+
+![Dashboard](https://hirednow.app/screenshot.png)
 
 ---
 
-## Why HiredNow?
-
-| ApplyBlast | HiredNow |
-|------------|----------|
-| $588/year | **$79 one-time** |
-| Cloud-based | **Local (your data stays private)** |
-| Subscription lock-in | **Own it forever** |
-| Resume in their database | **Resume never leaves your machine** |
-
----
-
-## What It Does
-
-1. **🔍 Find Jobs** - Scrapes LinkedIn & Indeed automatically
-2. **✨ Optimize Resume** - AI tailors your resume per job
-3. **🤖 Auto-Fill Forms** - Browser extension fills applications
-4. **📊 Track Applications** - Pipeline dashboard
-
-**All local. No cloud. No subscriptions.**
-
----
-
-## Quick Start
+## 🚀 Quick Start
 
 ```bash
-# Clone the repo
+# Install with one command
+curl -fsSL https://hirednow.app/install.sh | bash
+
+# Or clone manually
+git clone https://github.com/richardkrahl/hirednow.git
+cd hirednow
+pip install -r requirements.txt
+
+# Start the dashboard
+python dashboard.py
+# Open http://localhost:5000
+```
+
+---
+
+## ✨ Features
+
+- **🔍 Auto Job Search** - Scrapes LinkedIn & Indeed automatically
+- **✨ AI Resume Optimization** - Tailors resume per job using local Ollama (no API costs)
+- **🤖 One-Click Apply** - Browser extension auto-fills applications
+- **📊 Application Tracker** - Visual dashboard shows your pipeline
+- **📝 Cover Letter Generator** - AI writes personalized cover letters
+- **🔒 100% Local** - Your resume never leaves your machine
+
+---
+
+## 🎯 Why HiredNow?
+
+|  | Competitors | HiredNow |
+|---|---|---|
+| **Price** | $588/year | **$79 once** |
+| **Privacy** | Cloud-based | **100% local** |
+| **AI** | OpenAI API ($$$) | **Local Ollama (free)** |
+| **Data** | Their servers | **Your machine** |
+| **Lock-in** | Subscription | **Own it forever** |
+
+---
+
+## 📦 Installation
+
+### Requirements
+- Python 3.11+
+- macOS or Linux
+- Chrome browser
+- [Ollama](https://ollama.com) (free, for AI features)
+
+### One-Line Install
+```bash
+curl -fsSL https://hirednow.app/install.sh | bash
+```
+
+### Manual Install
+```bash
+# Clone repo
 git clone https://github.com/richardkrahl/hirednow.git
 cd hirednow
 
 # Install dependencies
 pip install -r requirements.txt
-npm install -g resume-cli
 
-# Set up your profile
-python applier/auto_applier.py create-profile
+# Install Ollama (for AI)
+curl -fsSL https://ollama.com/install.sh | sh
+ollama pull hoangquan456/qwen3-nothink:8b
 
-# Start applying
-python scraper/job_scraper.py "Software Engineer" "San Francisco, CA"
+# Start dashboard
+python dashboard.py
 ```
 
 ---
 
-## Features
+## 🖥️ Usage
 
-- **Local AI Resume Optimization** (Ollama-powered, no API keys)
-- **Browser Extension** for auto-filling job forms
-- **Multi-Platform Scraping** (LinkedIn, Indeed, more coming)
-- **Application Tracker** with pipeline dashboard
-- **PDF Resume Generation** with professional templates
-- **Cover Letter Auto-Generation**
+### Web Dashboard
+```bash
+python dashboard.py
+# Open http://localhost:5000 in browser
+```
+
+### Command Line
+```bash
+# Search for jobs
+python scraper/job_scraper.py "Hospitality Manager" "Nashville, TN"
+
+# Optimize resume for a job
+python optimizer/smart_optimizer.py "Manager" "Company" job_description.txt
+
+# Track applications
+python tracker/application_tracker.py dashboard
+```
+
+### Chrome Extension
+1. Go to `chrome://extensions`
+2. Enable "Developer mode"
+3. Click "Load unpacked"
+4. Select the `extension/` folder
+5. 🤖 HiredNow button appears on job sites
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - **Python 3.11+** - Core automation
-- **Ollama** - Local AI (no API costs)
+- **Flask + Bootstrap** - Web dashboard
 - **Playwright** - Browser automation
+- **Ollama** - Local AI (LLaMA/Qwen)
+- **SQLite** - Local database
 - **Chrome Extension** - Form auto-fill
-- **JSON Resume** - Industry-standard format
 
 ---
 
-## Pricing
+## 💰 Pricing
 
-**$79 one-time purchase.**
+**$79 one-time purchase**
 
-No subscriptions. No hidden fees. No cloud lock-in.
+- Lifetime access
+- All features included
+- Free updates
+- No subscriptions
+- No hidden fees
 
-[Buy Now](https://hirednow.app) | [Documentation](https://hirednow.app/docs)
-
----
-
-## Screenshots
-
-*Coming soon - see hirednow.app*
+[Buy Now](https://buy.stripe.com/...) • [View on GitHub](https://github.com/richardkrahl/hirednow)
 
 ---
 
-## Support
+## 🔒 Privacy
 
-- 📧 Email: support@hirednow.app
-- 💬 Issues: [GitHub Issues](https://github.com/richardkrahl/hirednow/issues)
+- ✅ All data stays on your machine
+- ✅ No cloud storage
+- ✅ No data mining
+- ✅ No "we updated our privacy policy"
+- ✅ Open source (MIT license)
 
 ---
 
-## License
+## 🤝 Contributing
 
-MIT License - See [LICENSE](LICENSE) for details.
+Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md)
+
+---
+
+## 📄 License
+
+MIT License - see [LICENSE](LICENSE)
 
 **Built with ❤️ in Nashville, TN**
